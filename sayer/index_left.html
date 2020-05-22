@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meshena</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/icon" href="images/fav-icon.png">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css?v=1.3">
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<nav class="navbar navbar-default"> 
+				<div class=""> 
+					<div class="navbar-header"> 
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> 
+							<span class="sr-only">Toggle navigation</span> 
+							<span class="icon-bar"></span> <span class="icon-bar"></span> 
+							<span class="icon-bar"></span> 
+						</button> 
+						<a href=""><img src="images/logo-2.png" alt=""></a> 
+						<ul class="list-unstyled flex">
+							<li class="active"><a href="#"><i class="fa fa-bed"></i><span> Hotels</span></a></li>
+							<li><a href="#"><i class="fa fa-plane"></i><span> Flights</span></a></li>
+							<li><a href="#"><i class="fa fa-briefcase"></i><span> Holidays</span></a></li>
+							<li><a href="#"><i class="fa fa-ticket"></i><span> Travel Offers</span></a></li>
+						</ul>
+					</div> 
+					<div class="navbar-collapse active collapse" id="bs-example-navbar-collapse-1" aria-expanded="false" style="height: 1px;"> 
+						<ul class="nav navbar-nav ritsec">
+					        <li class="dropdown">
+					          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SAR<span><i class="fa fa-angle-down"></i></span></a>
+								<ul class="dropdown-menu ">
+									<li><a href="#" class="active"><span class="font-bold">SAR</span> Saudi Riyal</a></li>
+									<li><a href="#"><span class="font-bold">AED</span> United Arab Emirates Dirham</a></li>
+									<li><a href="#"><span class="font-bold">QAR</span> Qatari Rial</a></li>
+									<li><a href="#"><span class="font-bold">KWD</span> Kuwaiti Dinar</a></li>
+									<li><a href="#"><span class="font-bold">BHD</span> Bahraini Dinar</a></li>
+									<li><a href="#"><span class="font-bold">USD</span> US Dollar</a></li>
+									<li><a href="#"><span class="font-bold">EUR</span> Euro</a></li>
+									<li><a href="#"><span class="font-bold">GBP</span> British Pound</a></li>
+									<li><a href="#"><span class="font-bold">EGP</span> Egyptian Pound</a></li>
+									<li><a href="#"><span class="font-bold">INR</span> Indian Rupee</a></li>
+								</ul>
+					        </li>
+					        <li class="dropdown">
+					          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Language<span><i class="fa fa-angle-down"></i></span></a>
+								<ul class="dropdown-menu ">
+									<li><a href="#">English</a></li>
+									<li><a href="#"> عربى</a></li>
+								</ul>
+					        </li>
+					        <li>
+					        	<a href="#">Retrieve booking</a>
+					        </li>
+					        <li>
+					        	<a href="#">Sign In</a>
+					        </li>
+					    </ul> 
+					</div><!-- /.navbar-collapse --> 
+				</div><!-- /.container-fluid --> 
+			</nav>
+		</div>	
+	</div>
+
+	<div class="banner">
+		<div class="owl-carousel owl-theme" id="banner">
+		    <div class="item">
+		    	<!-- <img src="images/web-skinning6.jpg"> -->
+			</div>
+			<div class="item">
+		    	<!-- <img src="images/web-skinning6.jpg"> -->
+			</div>
+		</div>
+		<div class="position">
+			<div class="vertical-space-60"></div>
+			<h1 class="text-center">Welcome back to Almosafer!</h1>
+			<h4 class="text-center">Let's get your travel plans sorted!</h4>
+			<div class="vertical-space-20"></div>
+			<div class="search-box">
+				<div class="container">
+				<div class="">
+					<div class="col-md-4 pd-0-2">
+						<div class="input-group">
+							<div class="input-group-addon">
+						        <i class="fa fa-map-marker"></i>
+						    </div>
+						    <input type="text" class="form-control" placeholder="Search for hotels or places" id="city_search">
+						</div>
+					</div>
+					<div class="col-md-3 pd-0-2">
+						<div class="input-group date check-in">
+							<div class="input-group-addon">
+						        <i class="fa fa-calendar"></i>
+						    </div>
+						    <input type="text" class="form-control" placeholder="Check In" id="search_checkin">
+						</div>
+						<div class="input-group date check-out">
+							<div class="input-group-addon">
+						        <i class="fa fa-calendar"></i>
+						    </div>
+						    <input type="text" class="form-control" placeholder="Check Out" id="search_checkout">
+						</div>
+					</div>
+					<div class="col-md-3 pd-0-2">
+						<select class="full-width hotel_rooms">
+		                  	<option value="a">1 Room, 2 Adults, 0 Children</option>
+		                  	<option value="b">1 Room, 1 Adult, 0 Children</option>
+		                  	<option value="c">More options</option>
+		                </select>
+					</div>
+					<div class="col-md-2 pd-0-2">
+						<a href="#" class="btn btn-default" class="form-control full-width"><i class="fa fa-search"></i> Search Hotels</a>
+					</div>
+				</div>
+				<div class="">
+					<div class="col-md-12 hotel_extra_rooms" style="display:none;" >
+						<div class="row hotel_extra_rooms_title hidden-xs">
+							<div class="col-md-2"></div>
+							<div class="col-md-2">Adult (+12)</div>
+							<div class="col-md-2">Children (0-11)</div>
+							<div class="col-md-2 hotel_age hidden_default">Age of Child</div>
+
+						</div>
+						<div class="row room_slection" id="room_slection">
+							<div class="col-md-2"><h5 class="hotel_room_title"><i class="fa fa-bed"></i> Room <span>1</span></h5></div>
+							<div class="col-md-2">
+								<select class="full-width hotel_adult" >
+				                  	<option value="1">1 Adult</option>
+				                  	<option value="2">2 Adults</option>
+				                  	<option value="3">3 Adults</option>
+				                  	<option value="4">4 Adults</option>
+				                </select>
+							</div>
+
+							<div class="col-md-2">
+								<select class="full-width hotel_child">
+									<option value="0">0 Children</option>
+				                  	<option value="1">1 Children</option>
+				                  	<option value="2">2 Children</option>
+				                </select>
+							</div>
+
+							<div class="col-md-1 ">
+								<select class="full-width chilage_1 hidden_default">
+									<option value="0">< 1</option>
+				                  	<option value="1">1 </option>
+				                  	<option value="2">2</option>
+				                  	<option value="3">3</option>
+				                  	<option value="4">4</option>
+				                  	<option value="5">5</option>
+				                  	<option value="6">6</option>
+				                  	<option value="7">7</option>
+				                  	<option value="8">8</option>
+				                  	<option value="9">9</option>
+				                  	<option value="10">10</option>
+				                  	<option value="11">11</option>
+				                </select>
+							</div>
+
+							<div class="col-md-1 ">
+								<select class="full-width chilage_2 hidden_default" >
+									<option value="0">< 1</option>
+				                  	<option value="1">1 </option>
+				                  	<option value="2">2</option>
+				                  	<option value="3">3</option>
+				                  	<option value="4">4</option>
+				                  	<option value="5">5</option>
+				                  	<option value="6">6</option>
+				                  	<option value="7">7</option>
+				                  	<option value="8">8</option>
+				                  	<option value="9">9</option>
+				                  	<option value="10">10</option>
+				                  	<option value="11">11</option>
+				                </select>
+							</div>
+							<div class="col-md-4 ">
+								
+							</div>
+						</div>
+						<div class="room_slection_append"></div>
+							<div class="row">
+								<div class="col-md-12 text-right"><a href="javascript:void(0)" class="hotel_room_add">Add another room (4 max)  <i class="fa fa-plus-circle"></i>
+
+									<a href="javascript:void(0)" class="hotel_room_minus hidden_default text-right"> <i class="fa fa-times"></i></a>
+
+								</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="intro">
+		<div class="container">
+			<div class="vertical-space-40"></div>
+			<div class="owl-carousel owl-theme" id="intro-carousel">
+			    <div class="item">
+			    	<div class="intro-box">
+			    		<div class="img-box">
+			    			<img src="images/sabb-offer-hotel-bookings-march-2019-offer-home-en.jpg" class="full-width">
+			    		</div>
+			    		<div class="intro-box-detail">
+			    			<h4 class="text-center font-bold">Explore the paradise islands of Seychelles with 10% off on hotels</h4>
+			    			<p><img src="images/icon-clock.png"></i>Valid till: <span>20 March 2019</span></p>
+			    			<div class="vertical-space-10"></div>
+			    			<p class="text-right mr-0"><a href="#">VIEW DETAILS</a></p>
+			    		</div>
+			    	</div>
+			    </div>
+			    <div class="item">
+			    	<div class="intro-box">
+			    		<div class="img-box">
+			    			<img src="images/sabb-offer-hotel-bookings-march-2019-offer-home-en.jpg" class="full-width">
+			    		</div>
+			    		<div class="intro-box-detail">
+			    			<h4 class="text-center font-bold">Explore the paradise islands of Seychelles with 10% off on hotels</h4>
+			    			<p><img src="images/icon-clock.png"></i>Valid till: <span>20 March 2019</span></p>
+			    			<div class="vertical-space-10"></div>
+			    			<p class="text-right mr-0"><a href="#">VIEW DETAILS</a></p>
+			    		</div>
+			    	</div>
+			    </div>
+			    <div class="item">
+			    	<div class="intro-box">
+			    		<div class="img-box">
+			    			<img src="images/sabb-offer-hotel-bookings-march-2019-offer-home-en.jpg" class="full-width">
+			    		</div>
+			    		<div class="intro-box-detail">
+			    			<h4 class="text-center font-bold">Explore the paradise islands of Seychelles with 10% off on hotels</h4>
+			    			<p><img src="images/icon-clock.png"></i>Valid till: <span>20 March 2019</span></p>
+			    			<div class="vertical-space-10"></div>
+			    			<p class="text-right mr-0"><a href="#">VIEW DETAILS</a></p>
+			    		</div>
+			    	</div>
+			    </div>
+			    <div class="item">
+			    	<div class="intro-box">
+			    		<div class="img-box">
+			    			<img src="images/sabb-offer-hotel-bookings-march-2019-offer-home-en.jpg" class="full-width">
+			    		</div>
+			    		<div class="intro-box-detail">
+			    			<h4 class="text-center font-bold">Explore the paradise islands of Seychelles with 10% off on hotels</h4>
+			    			<p><img src="images/icon-clock.png"></i>Valid till: <span>20 March 2019</span></p>
+			    			<div class="vertical-space-10"></div>
+			    			<p class="text-right mr-0"><a href="#">VIEW DETAILS</a></p>
+			    		</div>
+			    	</div>
+			    </div>
+			    <div class="item">
+			    	<div class="intro-box">
+			    		<div class="img-box">
+			    			<img src="images/sabb-offer-hotel-bookings-march-2019-offer-home-en.jpg" class="full-width">
+			    		</div>
+			    		<div class="intro-box-detail">
+			    			<h4 class="text-center font-bold">Explore the paradise islands of Seychelles with 10% off on hotels</h4>
+			    			<p><img src="images/icon-clock.png"></i>Valid till: <span>20 March 2019</span></p>
+			    			<div class="vertical-space-10"></div>
+			    			<p class="text-right mr-0"><a href="#">VIEW DETAILS</a></p>
+			    		</div>
+			    	</div>
+			    </div>
+			    <div class="item">
+			    	<div class="intro-box">
+			    		<div class="img-box">
+			    			<img src="images/sabb-offer-hotel-bookings-march-2019-offer-home-en.jpg" class="full-width">
+			    		</div>
+			    		<div class="intro-box-detail">
+			    			<h4 class="text-center font-bold">Explore the paradise islands of Seychelles with 10% off on hotels</h4>
+			    			<p><img src="images/icon-clock.png"></i>Valid till: <span>20 March 2019</span></p>
+			    			<div class="vertical-space-10"></div>
+			    			<p class="text-right mr-0"><a href="#">VIEW DETAILS</a></p>
+			    		</div>
+			    	</div>
+			    </div>
+			</div>
+			<div class="vertical-space-30"></div>
+		</div>
+	</div>
+
+	<div class="seo-services">
+		<div class="container">
+			<div class="vertical-space-40"></div>
+			<div class="col-md-3">
+				<div class="seo-services-box">
+					<div class="img-box">
+						<img src="images/hotel-03.png">
+					</div>
+					<h3>Choose from Over 1 Million Hotels</h3>
+					<p>Book hotels with Almosafer at affordable prices, from cheap hotels to luxury accommodations, for any kind of stay. Compare rates and choose from over 1 million hotels around the world with Almosafer.</p>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="seo-services-box">
+					<div class="img-box">
+						<img src="images/search (3).png">
+					</div>
+					<h3>Quick and Easy Hotel Search</h3>
+					<p>Online hotel booking in any destination is easy with Almosafer. Compare prices, amenities, and star rating and pick your favourite based on location, convenience, dining options and more.</p>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="seo-services-box">
+					<div class="img-box">
+						<img src="images/globe-plane.png">
+					</div>
+					<h3>Exclusive Choice of Hotels at Affordable Prices</h3>
+					<p>Browse for cheap hotels, compare rates and get the best deals on hotel bookings with Almosafer. Book hotels online and choose from affordable rates with special discounts, for a stay at budget-friendly prices.</p>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="seo-services-box">
+					<div class="img-box">
+						<img src="images/app-download.png">
+					</div>
+					<h3>Book Hotels at Your Own Comfort With Almosafer App</h3>
+					<p>Download the Almosafer app for free on Google Play and the App Store and get access to the best hotel booking deals right at your fingertips. Choose and book hotels on the app in a few simple steps.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="our-app">
+		<div class="our-app-top">
+			<div class="vertical-space-60"></div>
+		</div>
+		<div class="our-app-main">
+			<div class="container">
+				<div class="vertical-space-10"></div>
+				<div class="col-md-8">
+					<h3 class="font-bold">Get the Almosafer app!</h3>
+					<p>Our app has all your hotel needs covered: Secure payment channels, easy 4-step booking process, and sleek user designs. What more could you ask for?</p>
+				</div>
+				<div class="col-md-4">
+					<div class="row">
+						<div class="col-md-8">
+							<img src="images/footer-app-en.png" class="full-width app-screen-shot">
+						</div>
+						<div class="col-md-4">
+							<div class="vertical-space-10"></div>
+							<img src="images/ios-app.png" class="full-width os">
+							<img src="images/goole-app.png" class="full-width os">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="container">
+			<div class="vertical-space-30"></div>
+			<div class="row">
+				<div class="col-md-2">
+					<div class="logo-img"><a href="#"></a><img src="images/logo-2.png"></a></div>
+				</div>
+				<div class="col-md-2">
+					<h3>Corporate</h3>
+					<ul class="list-unstyled">
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">Affiliate</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<h3>Legal</h3>
+					<ul class="list-unstyled">
+						<li><a href="#">Terms & conditions</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<h3>Support</h3>
+					<ul class="list-unstyled">
+						<li><a href="#">Contact us</a></li>
+						<li><a href="#">FAQ</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<h3>Social media</h3>
+					<ul class="list-unstyled">
+						<li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i> Linkedin</a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i> Instagram </a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+						<li><a href="#"><i class="fa fa-youtube"></i> Yotube</a></li>
+						<li><a href="#"><i class="fa fa-snapchat"></i> Snapchat</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<h3>Countries</h3>
+					<ul class="list-unstyled">
+						<li><a href="#">Saudi Arabia</a></li>
+						<li><a href="#">Egypt</a></li>
+						<li><a href="#">Kuwait</a></li>
+						<li><a href="#">United Arab Emirates</a></li>
+						<li><a href="#">World Wide</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="cards text-center">
+				<img src="images/credit-cards-almosafer-3.png">
+			</div>
+			<div class="vertical-space-10"></div>
+		</div>
+	</div>
+
+	<div class="footer-description">
+		<div class="container">
+			<div class="vertical-space-30"></div>
+			<div class="footer-description-box">
+				<div class="row">
+					<div class="col-md-3">
+						<h5 class="font-bold"><a href="#">Top Hotels Destinations</a></h5>
+					</div>
+					<div class="col-md-9">
+						<ul class="list-unstyled">
+							<li><a href="#">Hotels In <span>Dubai</span></a></li>
+							<li><a href="#">Hotels In <span>Manama</span></a></li>
+							<li><a href="#">Hotels In <span>Istanbul </span></a></li>
+							<li><a href="#">Hotels In <span>Makkah </span></a></li>
+							<li><a href="#">Hotels In <span>Cairo </span></a></li>
+							<li><a href="#">Hotels In <span>Abu Dhabi </span></a></li>
+							<li><a href="#">Hotels In <span>Riyadh </span></a></li>
+							<li><a href="#">Hotels In <span>Jeddah </span></a></li>
+							<li><a href="#">Hotels In <span>Madina </span></a></li>
+							<li><a href="#">Hotels In <span>London </span></a></li>
+							<li><a href="#">Hotels In <span>Amman </span></a></li>
+							<li><a href="#">Hotels In <span>Kuwait </span></a></li>
+							<li><a href="#">Hotels In <span>Sharm El Sheikh </span></a></li>
+							<li><a href="#">Hotels In <span>Paris </span></a></li>
+							<li><a href="#">Hotels In <span>Kuala Lumpur </span></a></li>
+							<li><a href="#">Hotels In <span>Sharjah </span></a></li>
+							<li><a href="#">Hotels In <span>Trabzon </span></a></li>
+							<li><a href="#">Hotels In <span>Jakarta </span></a></li>
+							<li><a href="#">Hotels In <span>Baku </span></a></li>
+							<li><a href="#">Hotels In <span>Milan </span></a></li>
+							<li><a href="#">Hotels In <span>Beirut</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-description-box">
+				<div class="row">
+					<div class="col-md-3">
+						<h5 class="font-bold"><a href="#">Top Hotels in Countries</a></h5>
+					</div>
+					<div class="col-md-9">
+						<ul class="list-unstyled">
+							<li><a href="#">Hotels In <span>Kuala Lumpur </span></a></li>
+							<li><a href="#">Hotels In <span>Sharjah </span></a></li>
+							<li><a href="#">Hotels In <span>Trabzon </span></a></li>
+							<li><a href="#">Hotels In <span>Jakarta </span></a></li>
+							<li><a href="#">Hotels In <span>Baku </span></a></li>
+							<li><a href="#">Hotels In <span>Milan </span></a></li>
+							<li><a href="#">Hotels In <span>Beirut</span></a></li>
+							<li><a href="#">Hotels In <span>Dubai</span></a></li>
+							<li><a href="#">Hotels In <span>Manama</span></a></li>
+							<li><a href="#">Hotels In <span>Istanbul </span></a></li>
+							<li><a href="#">Hotels In <span>Makkah </span></a></li>
+							<li><a href="#">Hotels In <span>Cairo </span></a></li>
+							<li><a href="#">Hotels In <span>Abu Dhabi </span></a></li>
+							<li><a href="#">Hotels In <span>Riyadh </span></a></li>
+							<li><a href="#">Hotels In <span>Jeddah </span></a></li>
+							<li><a href="#">Hotels In <span>Madina </span></a></li>
+							<li><a href="#">Hotels In <span>London </span></a></li>
+							<li><a href="#">Hotels In <span>Amman </span></a></li>
+							<li><a href="#">Hotels In <span>Kuwait </span></a></li>
+							<li><a href="#">Hotels In <span>Sharm El Sheikh </span></a></li>
+							<li><a href="#">Hotels In <span>Paris </span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-description-box">
+				<div class="row">
+					<div class="col-md-3">
+						<h5 class="font-bold"><a href="#">Top Hotels in Continents</a></h5>
+					</div>
+					<div class="col-md-9">
+						<ul class="list-unstyled">
+							<li><a href="#">Hotels In <span>Dubai</span></a></li>
+							<li><a href="#">Hotels In <span>Manama</span></a></li>
+							<li><a href="#">Hotels In <span>Istanbul </span></a></li>
+							<li><a href="#">Hotels In <span>Makkah </span></a></li>
+							<li><a href="#">Hotels In <span>Cairo </span></a></li>
+							<li><a href="#">Hotels In <span>Abu Dhabi </span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-description-box">
+				<div class="row">
+					<div class="col-md-3">
+						<h5 class="font-bold"><a href="#">Top Airlines</a></h5>
+					</div>
+					<div class="col-md-9">
+						<ul class="list-unstyled">
+							<li><a href="#">Flynas</a></li>
+							<li><a href="#">Emirates Airlines</a></li>
+							<li><a href="#">Etihad Airways</a></li>
+							<li><a href="#">Turkish Airlines</a></li>
+							<li><a href="#">Nesma Airlines</a></li>
+							<li><a href="#">Air Arabia</a></li>
+							<li><a href="#">Egyptair</a></li>
+							<li><a href="#">Sri Lankan Airlines</a></li>
+							<li><a href="#">Singapore Airlines</a></li>
+							<li><a href="#">Saudi Airlines</a></li>
+							<li><a href="#">Gulf Air</a></li>
+							<li><a href="#">Air India</a></li>
+							<li><a href="#">Flydubai</a></li>
+							<li><a href="#">Jet Airways</a></li>
+							<li><a href="#">Kuwait Airways</a></li>
+							<li><a href="#">Philippine Airlines</a></li>
+							<li><a href="#">Oman Air</a></li>
+							<li><a href="#">British Airways</a></li>
+							<li><a href="#">KLM</a></li>
+							<li><a href="#">Indigo</a></li>
+							<li><a href="#">Spicejet</a></li>
+							<li><a href="#">Air Cairo</a></li>
+							<li><a href="#">Saudigulf Airlines</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-description-box">
+				<div class="row">
+					<div class="col-md-3">
+						<h5 class="font-bold"><a href="#">Top Destinations</a></h5>
+					</div>
+					<div class="col-md-9">
+						<ul class="list-unstyled">
+							<li><a href="#">Flights To <span>Dubai </span></a></li>
+							<li><a href="#">Flights To <span>Abu Dhabi </span></a></li>
+							<li><a href="#">Flights To <span>Riyadh </span></a></li>
+							<li><a href="#">Flights To <span>Manila </span></a></li>
+							<li><a href="#">Flights To <span>London </span></a></li>
+							<li><a href="#">Flights To <span>Cairo </span></a></li>
+							<li><a href="#">Flights To <span>Amman </span></a></li>
+							<li><a href="#">Flights To <span>Kerala </span></a></li>
+							<li><a href="#">Flights To <span>Istanbul </span></a></li>
+							<li><a href="#">Flights To <span>Kuwait </span></a></li>
+							<li><a href="#">Flights To <span>Karachi </span></a></li>
+							<li><a href="#">Flights To <span>Hyderabad </span></a></li>
+							<li><a href="#">Flights To <span>Manama </span></a></li>
+							<li><a href="#">Flights To <span>Jeddah </span></a></li>
+							<li><a href="#">Flights To <span>Mumbai </span></a></li>
+							<li><a href="#">Flights To <span>Dammam </span></a></li>
+							<li><a href="#">Flights To <span>Delhi </span></a></li>
+							<li><a href="#">Flights To <span>Sharm El Sheikh </span></a></li>
+							<li><a href="#">Flights To <span>Alexandria </span></a></li>
+							<li><a href="#">Flights To <span>Hong Kong </span></a></li>
+							<li><a href="#">Flights To <span>Muscat </span></a></li>
+							<li><a href="#">Flights To <span>Sharjah </span></a></li>
+							<li><a href="#">Flights To <span>Kochi </span></a></li>
+							<li><a href="#">Flights To <span>Calicut </span></a></li>
+							<li><a href="#">Flights To <span>Abha </span></a></li>
+							<li><a href="#">Flights To <span>Trivandrum </span></a></li>
+							<li><a href="#">Flights To <span>Beirut </span></a></li>
+							<li><a href="#">Flights To <span>Madinah</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-description-box">
+				<div class="row">
+					<div class="col-md-3">
+						<h5 class="font-bold"><a href="#">Top Flights Routes</a></h5>
+					</div>
+					<div class="col-md-9">
+						<ul class="list-unstyled">
+							<li><a href="#"><span>Riyadh To Jeddah </span></a></li>
+							<li><a href="#"><span>Jeddah To Riyadh </span></a></li>
+							<li><a href="#"><span>Riyadh To Dubai </span></a></li>
+							<li><a href="#"><span>Jeddah To Cairo </span></a></li>
+							<li><a href="#"><span>Riyadh To Cairo </span></a></li>
+							<li><a href="#"><span>Jeddah To Dubai </span></a></li>
+							<li><a href="#"><span>Riyadh To Dammam </span></a></li>
+							<li><a href="#"><span>Jeddah To Alexandria </span></a></li>
+							<li><a href="#"><span>Riyadh To Abu Dhabi </span></a></li>
+							<li><a href="#"><span>Jeddah To Dammam</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="copy-right">
+				<p class="text-center">Copyright &#169 2019 Almosafer</p>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/moment.min.js"></script>
+	<script src="js/daterangepicker.js"></script>
+	<script src="js/home-script.js"></script>
+	<script src="js/hotel-scripts.js"></script>
+</body>
+</html>

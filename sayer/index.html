@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Car Rental</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/icon" href="images/fav-icon.png">
+	<link href="css/font.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.rtl.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="css/style.rtl.css?v=1.4">
+</head>
+
+<body>
+	<div class="header">
+		<div class="fluid-container d-flex">
+			<div class="col-md-9">
+				<nav class="navbar navbar-default">
+					<div class="navbar-header taxt-center">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+							data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span> <span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a href=""><img src="images/CarRentalLogo.png" alt=""></a>
+					</div>
+					<div class="navbar-collapse active collapse" id="bs-example-navbar-collapse-1" aria-expanded="false"
+						style="height: 1px;">
+						<ul class="nav navbar-nav ritsec">
+							<li>
+								<a href="#" class="">Main</a>
+							</li>
+							<li>
+								<a href="#">Who are we</a>
+							</li>
+							<li>
+								<a href="#">Car order</a>
+							</li>
+							<li>
+								<a href="#">Companies</a>
+							</li>
+							<li>
+								<a href="">Sign up / Login</a>
+							</li>
+							<!-- <li>
+					        	<a href="#">Call us</a>
+					        </li> -->
+						</ul>
+					</div>
+			</div>
+			<div class="col-md-3">
+				<ul class="header-btn">
+					<li>
+						<a href="#" class="btn btn-primary cart-btn"><i class="fa fa-shopping-cart"
+								aria-hidden="true"></i></a>
+					</li>
+					<li class="header-list-btn">
+						<a href="list.html" class="header-singin car-list">List Your Car</a>
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+			</nav>
+		</div>
+	</div>
+
+	<div class="banner">
+		<div class="banner-detail-box">
+			<div class="vertical-space-60"></div>
+			<h3>welcome To sayer</h3>
+			<h1>BOOK YOUR CAR</h1>
+			<div class="vertical-space-20"></div>
+			<div class="search-box" id="myHeader">
+				<div>
+					<div class="col-md-2">
+						<div class="search">
+							<h5>Location</h5>
+							<select class="form-control search-input">
+								<option><i class="fa fa-user-alt"></i>Select City</option>
+								<option>arab</option>
+								<option>Dubai</option>
+								<option>Oman</option>
+								<option>Quith</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="search">
+							<h5>Select Car Brand</h5>
+							<select class="form-control search-input">
+								<option>Select Car</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="search">
+							<h5> Start date </h5>
+							<select class="form-control search-input">
+								<option>Select Date</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="search">
+							<h5> End date</h5>
+							<select class="form-control search-input">
+								<option>Select date</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="search">
+							<h5>Map Location</h5>
+							<select class="form-control search-input">
+								<option>car model</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="search">
+							<a class="btn btn-default search-btn" href="#">SEARCH</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="owl-carousel owl-theme" id="banner">
+			<div class="item">
+				<img src="images/banner_2.jpg" class="full-width">
+				<div class="banner-detail"></div>
+			</div>
+			<div class="item">
+				<img src="images/banner_2.jpg" class="full-width">
+				<div class="banner-detail"></div>
+			</div>
+			<div class="item">
+				<img src="images/banner_2.jpg" class="full-width">
+				<div class="banner-detail"></div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-12">
+		<div class="container">
+			<div class="row">
+				<div class="services">
+					<div class="col-md-1 service-img">
+						<img src="images/rotate.svg" class="">
+					</div>
+					<div class="col-md-3">
+						<h3>Free Cancellation</h3>
+						<p>Morbi semper fames lobortis ac</p>
+					</div>
+					<div class="col-md-1 service-img">
+						<img src="images/tag.svg" class="">
+					</div>
+					<div class="col-md-3">
+						<h3>No Hidden Costs</h3>
+						<p>Morbi semper fames lobortis</p>
+					</div>
+					<div class="col-md-1 service-img">
+						<img src="images/clock.svg" class="">
+					</div>
+					<div class="col-md-3">
+						<h3>24/7 Customer Care</h3>
+						<p>Morbi semper fames lobortis</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="car-category">
+		<div class="container">
+			<h3 class="text-center">Browse by categories</h3>
+			<div class="vertical-space-20"></div>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="product-box">
+						<div class="img-box">
+							<img src="images/product_img.jpg">
+						</div>
+						<div class="detail-box">
+							<h4>Convertibles</i></h4>
+						</div>
+						<div class="vertical-space-10"></div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="product-box">
+						<div class="img-box">
+							<img src="images/product_img.jpg">
+						</div>
+						<div class="detail-box">
+							<h4>Coupes</h4>
+						</div>
+						<div class="vertical-space-10"></div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="product-box">
+						<div class="img-box">
+							<img src="images/product_img.jpg">
+						</div>
+						<div class="detail-box">
+							<h4>Hatchbacks </h4>
+						</div>
+						<div class="vertical-space-10"></div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="product-box">
+						<div class="img-box">
+							<img src="images/product_img.jpg">
+						</div>
+						<div class="detail-box">
+							<h4>Minivans </h4>
+						</div>
+						<div class="vertical-space-10"></div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="product-box">
+						<div class="img-box">
+							<img src="images/product_img.jpg">
+						</div>
+						<div class="detail-box">
+							<h4>Sedan </h4>
+						</div>
+						<div class="vertical-space-10"></div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="product-box">
+						<div class="img-box">
+							<img src="images/product_img.jpg">
+						</div>
+						<div class="detail-box">
+							<h4>SUVs </h4>
+						</div>
+						<div class="vertical-space-10"></div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="product-box">
+						<div class="img-box">
+							<img src="images/product_img.jpg">
+						</div>
+						<div class="detail-box">
+							<h4>Trucks </h4>
+						</div>
+						<div class="vertical-space-10"></div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="product-box">
+						<div class="img-box">
+							<img src="images/product_img.jpg">
+						</div>
+						<div class="detail-box">
+							<h4>Wagons </h4>
+						</div>
+
+						<div class="vertical-space-10"></div>
+					</div>
+				</div>
+			</div>
+			<div class="vertical-space-20"></div>
+		</div>
+	</div>
+	<div class="feature-top-ver"></div>
+	<!-- feature location  -->
+	<div class="container feature-location">
+		<div>
+			<h3 class="text-center">Featured Location</h3>
+			<div class="vertical-space-20"></div>
+			<div class="row row-feat">
+				<div class="feature-box col-md-2 d-flex">
+					<div class="fea-icon w-100">
+						<span>
+						<img src="https://cdn1.iconfinder.com/data/icons/africa-middle-east/100/SAUDI_ARABIA_-_Riyadh-512.png"
+							width="131" alt="">
+						</span>
+					</div>
+					<p>Abha</p>
+				</div>
+				<div class="feature-box col-md-2 d-flex">
+					<div class="fea-icon w-100">
+						<span>
+						<img src="https://cdn1.iconfinder.com/data/icons/africa-middle-east/100/SAUDI_ARABIA_-_Riyadh-512.png"
+							width="131" alt="">
+						</span>
+					</div>
+					<p>Ad-Dilam</p>
+				</div>
+				<div class="feature-box col-md-2 d-flex">
+					<div class="fea-icon w-100">
+						<span>
+						<img src="https://cdn1.iconfinder.com/data/icons/africa-middle-east/100/SAUDI_ARABIA_-_Riyadh-512.png"
+							width="131" alt="">
+						</span>
+					</div>
+					<p>Al-Abwa</p>
+				</div>
+				<div class="feature-box col-md-2 d-flex">
+					<div class="fea-icon w-100">
+						<span>
+						<img src="https://cdn1.iconfinder.com/data/icons/africa-middle-east/100/SAUDI_ARABIA_-_Riyadh-512.png"
+							width="131" alt="">
+						</span>
+					</div>
+					<p>Bisha</p>
+				</div>
+				<div class="feature-box col-md-2 d-flex">
+					<div class="fea-icon w-100">
+						<span>
+						<img src="https://cdn1.iconfinder.com/data/icons/africa-middle-east/100/SAUDI_ARABIA_-_Riyadh-512.png"
+							width="131" alt="">
+						</span>
+					</div>
+					<p>Al Bahah</p>
+				</div>
+				<div class="feature-box col-md-2 d-flex">
+					<div class="fea-icon w-100">
+						<span>
+						<img src="https://cdn1.iconfinder.com/data/icons/africa-middle-east/100/SAUDI_ARABIA_-_Riyadh-512.png"
+							width="131" alt="">
+						</span>
+					</div>
+					<p>Dammam</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="vertical-space-20"></div>
+
+	<div class="footer">
+		<div class="container">
+			<div class="vertical-space-50"></div>
+			<div class="row">
+				<div class="col-md-7">
+					<div class="row">
+						<div class="col-md-3">
+							<h4>Sayer</h4>
+							<ul class="list-unstyled">
+								<li><a href="#">who are we</a></li>
+								<li><a href="#">call us</a></li>
+								<li><a href="#">Complaints</a></li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<h4>Companies</h4>
+							<ul class="list-unstyled">
+								<li><a href="#">Presentation of companies</a></li>
+								<li><a href="#">Company evaluation</a></li>
+								<li><a href="#">Sayer Employment:jobs@sayerrental.com</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<h4>The account</h4>
+							<ul class="list-unstyled">
+								<li><a href="#">My data</a></li>
+								<li><a href="#">My requests</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<h4>We are glad to serve you .. You can contact us through</h4>
+					<ul class="list-unstyled social-medias">
+						<li class="facebook">
+							<a href="#"><i class="fa fa-facebook-f text-center"></i></a>
+						</li>
+						<li class="google-plus">
+							<a href="#"><i class="fa fa-google-plus text-center"></i></a>
+						</li>
+						<li class="twitter">
+							<a href="#"><i class="fa fa-twitter text-center"></i></a>
+						</li>
+						<li class="wordpress">
+							<a href="#"><i class="fa fa-wordpress text-center"></i></a>
+						</li>
+						<li class="youtube">
+							<a href="#"><i class="fa fa-youtube text-center"></i></a>
+						</li>
+						<li class="pinterest">
+							<a href="#"><i class="fa fa-pinterest text-center"></i></a>
+						</li>
+					</ul>
+					<div class="input-group search-input">
+						<input type="text" class="form-control" placeholder="Find a Car" name="Find a Car">
+						<div class="input-group-btn">
+							<button class="btn btn-default" type="submit">Search</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="vertical-space-20"></div>
+			<div class="copyright-Text">
+				<p>© 2017 All rights reserved to Sayer | Development of <a href="#">the Software Corner Foundation</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/daterangepicker.js"></script>
+	<script src="js/home-script-ar.js"></script>
+	<script type="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+	<script>
+		window.onscroll = function () {
+			myFunction()
+		};
+
+		var header = document.getElementById("myHeader");
+		var sticky = header.offsetTop;
+
+		function myFunction() {
+			if (window.pageYOffset > sticky) {
+				header.classList.add("sticky");
+			} else {
+				header.classList.remove("sticky");
+			}
+		}
+	</script>
+	<script>
+		$('#similar').owlCarousel({
+			rtl: true,
+			loop: true,
+			margin: 10,
+			nav: true,
+			responsive: {
+				0: {
+					items: 6
+				},
+				600: {
+					items: 3
+				},
+				1000: {
+					items: 5
+				}
+			}
+		})
+	</script>
+</body>
+
+</html>
